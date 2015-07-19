@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+
 public class MainActivity extends Activity {
 
 	@Override
@@ -41,7 +42,7 @@ public class MainActivity extends Activity {
 	}
 	
 	public void onMonitoringClicked(View view) {
-		Toast.makeText(getApplicationContext(), "비콘 검색을 시작합니다.", Toast.LENGTH_LONG).show();
+		//Toast.makeText(getApplicationContext(), "비콘 검색을 시작합니다.", Toast.LENGTH_LONG).show();
 		Intent myIntent = new Intent(this, MonitoringActivity.class);
 		this.startActivity(myIntent);
 	}
